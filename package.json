@@ -11,7 +11,11 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng build --prod && ng run git-repo-app:server:production --bundleDependencies all"
+    "build:client-and-server-bundles": "ng build && ng run git-repo-app:server --bundleDependencies all",
+    "build:client-and-server-bundles-prod": "ng build --prod --baseHref=/ && ng run git-repo-app:server:production --bundleDependencies all",
+    "build:dynamic-prod": "npm run build:client-and-server-bundles-prod && npm run compile:server",
+    "build:dynamic": "npm run build:client-and-server-bundles && npm run compile:server",
+    "build:dev": "npm run build:dynamic && npm run serve:ssr"
   },
   "private": true,
   "dependencies": {

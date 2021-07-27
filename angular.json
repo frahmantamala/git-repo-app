@@ -73,6 +73,9 @@
           "configurations": {
             "production": {
               "browserTarget": "git-repo-app:build:production"
+            },
+            "staging": {
+              "browserTarget": "cicil-web-admin-panel:build:staging"
             }
           }
         },

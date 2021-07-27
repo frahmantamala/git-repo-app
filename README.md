@@ -1,27 +1,31 @@
-# GitRepoApp
+# Git Repo App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+This project was built using [Angular](https://angular.io/)  v8.3.X
 
-## Development server
+This project usage for search username github, view detail user, and showing the repository
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+---
+## Tools, Environments & Dependencies
+- Angular CLI v8.3.29
+- npm v6.14.10
+- NodeJS v14.15.4
+- Bootstrap v5.0.x
 
-## Code scaffolding
+---
+## Development
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Angular Lean (development)
+Run `ng serve` to run dev server with hot reload.
 
-## Build
+Navigate to `http://localhost:4200/` to open.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Angular Universal
+- Run `npm run build:dev` to build Angular and run dev server. 
 
-## Running unit tests
+Navigate `http://localhost:4000` to open.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
+## Production Build
+Run `npm run serve:dynamic` to start the production server.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `npm run build:dynamic-prod` to build the project.
