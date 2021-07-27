@@ -1,0 +1,5 @@
+<div class="search-wrapper">
+  <app-search-user [isLoading]="isLoading$ | async" (handleSearched)=onUpdateSearchQuery($event)></app-search-user>
+  <app-search-result-user [results]="resultsForCurrentPage$ | async" (navigateDetails)="onNavigateDetails($event)">
+  </app-search-result-user>
+</div>

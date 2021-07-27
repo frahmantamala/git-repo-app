@@ -1,0 +1,25 @@
+<button class="btn btn-primary mt-3" (click)="onClickBack()">
+  Back
+</button>
+
+<div class="row mt-2 row-cols-1 row-cols-md-3 g-4">
+  <div class="col" *ngFor="let repo of resultRepo$ | async">
+    <div class="card border-primary mb-3">
+      <div class="card-header">{{repo.name}}</div>
+      <div class="card-body text-primary">
+        <h5 class="card-title">{{repo.full_name}}</h5>
+        <p class="card-text">{{repo.description || 'Description is Not available for this project'}}</p>
+        <h6>Total Star <span class="badge bg-secondary">{{repo.stargazers_count}}</span></h6>
+        <h6>Total Watch<span class="badge bg-secondary">{{repo.watchers_count}}</span></h6>
+        <h6>Total Forks<span class="badge bg-secondary">{{repo.forks_count}}</span></h6>
+        <span class="badge rounded-pill bg-secondary">{{repo.language}}</span>
+        <span class="badge rounded-pill bg-secondary">{{repo.size}}</span>
+
+        <p class="card-text">Clone via Https {{repo.git_url}}</p>
+        <p class="card-text">Clone via Ssh {{repo.ssh_url}}</p>
+      </div>
+      <div class="card-footer">
+      </div>
+    </div>
+  </div>
+</div>

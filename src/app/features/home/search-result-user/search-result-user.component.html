@@ -1,0 +1,10 @@
+<ng-container *ngIf="results">
+  <div *ngFor="let result of results" (click)="onNavigateDetails(result.url)" class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">
+        <img class="card-img" src="{{ result.avatar_url }}" />
+        {{ result.login }}
+      </h5>
+    </div>
+  </div>
+</ng-container>

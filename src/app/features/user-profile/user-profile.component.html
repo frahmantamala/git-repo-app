@@ -1,0 +1,17 @@
+<button class="btn btn-primary mt-3" (click)="onClickBack()">
+  Back
+</button>
+
+<div class="card-body" *ngIf="profileData">
+  <div class="card-title">
+    <img src="{{profileData.avatar_url}}" />
+  </div>
+  <h5>{{profileData.name}}</h5>
+  <span>{{profileData.login}}</span>
+
+  <div class="card-footer">
+    <button class="btn btn-primary" (click)="onClicGoToRepo()">
+      Go to Repositori
+    </button>
+  </div>
+</div>

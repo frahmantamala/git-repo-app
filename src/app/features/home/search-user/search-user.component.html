@@ -1,0 +1,19 @@
+<form [formGroup]="form" novalidate (ngSubmit)="onClickSearch()">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="query">Username Github</label>
+      <input type="text" class="form-control mt-2" id="query" formControlName="query" />
+    </div>
+  </div>
+  <div class="form-row mt-2">
+    <div class="form-group col">
+      <button *ngIf="!isLoading" class="btn btn-primary" (click)="onClickSearch()" type="submit"
+        [disabled]="!form.valid">
+        Search
+      </button>
+      <button *ngIf="isLoading" class="btn btn-primary" disabled>
+        Searching...
+      </button>
+    </div>
+  </div>
+</form>
