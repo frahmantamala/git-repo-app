@@ -10,6 +10,7 @@ This project usage for search username github, view detail user, and showing the
 - npm v6.14.10
 - NodeJS v14.15.4
 - Bootstrap v5.0.x
+- NgRx 8.0.0
 
 ---
 ## Development
