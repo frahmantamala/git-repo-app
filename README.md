@@ -16,11 +16,14 @@ This project usage for search username github, view detail user, and showing the
 ## Development
 
 ### Angular Lean (development)
+Run `npm install`
+
 Run `ng serve` to run dev server with hot reload.
 
 Navigate to `http://localhost:4200/` to open.
 
 ### Angular Universal
+- Run `npm install`
 - Run `npm run build:dev` to build Angular and run dev server. 
 
 Navigate `http://localhost:4000` to open.
